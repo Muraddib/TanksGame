@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a2e81a77da8394798410add3af5b24, type: 3}
+  m_Name: GameSettingsKeeper
+  m_EditorClassIdentifier: 
+  GameSettings:
+    PlayerPrefab: {fileID: 173656, guid: 9707ff633d4915e46840063931c53dfe, type: 2}
+    CameraPrefab: {fileID: 118886, guid: 1f4ed3ff97094bd41853c458c72205ad, type: 2}
+    Enemies:
+    - EnemyID: 0
+      MaxHealth: 100
+      Damage: 10
+      AttackRate: 2
+      AttackDistance: 7
+      RangedAttack: 0
+      MovementSpeed: 5
+      RangedAttackProjectile: {fileID: 0}
+      SpawnProbability: 0
+      EnemyPrefab: {fileID: 100118, guid: 2dc7fd707639358488ce5b5f66909ed7, type: 2}
+      Score: 100
+    - EnemyID: 1
+      MaxHealth: 100
+      Damage: 5
+      AttackRate: 2
+      AttackDistance: 30
+      RangedAttack: 1
+      MovementSpeed: 5
+      RangedAttackProjectile: {fileID: 100006, guid: 07bcd02ee43d34868b046580f4260744,
+        type: 2}
+      SpawnProbability: 0
+      EnemyPrefab: {fileID: 100000, guid: ec15986fc83fedc4786cef8b60135339, type: 2}
+      Score: 150
+    - EnemyID: 2
+      MaxHealth: 50
+      Damage: 30
+      AttackRate: 3
+      AttackDistance: 7
+      RangedAttack: 0
+      MovementSpeed: 2
+      RangedAttackProjectile: {fileID: 0}
+      SpawnProbability: 0
+      EnemyPrefab: {fileID: 100000, guid: 0821e72013843fb48aeb8e9684cc605e, type: 2}
+      Score: 300
+    - EnemyID: 3
+      MaxHealth: 100
+      Damage: 15
+      AttackRate: 1
+      AttackDistance: 7
+      RangedAttack: 0
+      MovementSpeed: 10
+      RangedAttackProjectile: {fileID: 0}
+      SpawnProbability: 0
+      EnemyPrefab: {fileID: 100000, guid: a1fa4dde4e1d56144b7b8494a1f32ce1, type: 2}
+      Score: 500
+    MaxEnemyCount: 10
+    SpawnPointRadius: 5
+    SpawnDelay: 2
+    Weapons:
+    - WeaponID: 0
+      AudioID: 0
+      WeaponProjectile: {fileID: 151272, guid: b0524b2af2a10754aa6797e704fa9541, type: 2}
+      ProjectileCount: 1
+      DamageAmount: 100
+      ProjectileSpeed: 100
+      ReloadTime: 1
+      Accuracy: 0.9
+      ExplodingProjectile: 1
+      ExplosionRadius: 20
+      ExplosionAudioID: 4
+      RecoilForce: 10000
+      LocalizedName: Cannon
+    - WeaponID: 1
+      AudioID: 1
+      WeaponProjectile: {fileID: 151272, guid: ba9369235048f824091b88ed5c01c02f, type: 2}
+      ProjectileCount: 1
+      DamageAmount: 70
+      ProjectileSpeed: 150
+      ReloadTime: 0.05
+      Accuracy: 0.8
+      ExplodingProjectile: 0
+      ExplosionRadius: 0
+      ExplosionAudioID: 0
+      RecoilForce: 200
+      LocalizedName: Machine Gun
+    - WeaponID: 2
+      AudioID: 2
+      WeaponProjectile: {fileID: 151272, guid: ba9369235048f824091b88ed5c01c02f, type: 2}
+      ProjectileCount: 15
+      DamageAmount: 50
+      ProjectileSpeed: 110
+      ReloadTime: 0.5
+      Accuracy: 0.1
+      ExplodingProjectile: 0
+      ExplosionRadius: 0
+      ExplosionAudioID: 0
+      RecoilForce: 1000
+      LocalizedName: Shotgun
+    EnemyWeapons:
+    - WeaponID: 4
+      AudioID: 6
+      WeaponProjectile: {fileID: 0}
+      ProjectileCount: 0
+      DamageAmount: 20
+      ProjectileSpeed: 0
+      ReloadTime: 0
+      Accuracy: 0
+      ExplodingProjectile: 0
+      ExplosionRadius: 0
+      ExplosionAudioID: 0
+      RecoilForce: 0
+      LocalizedName: 
+    - WeaponID: 5
+      AudioID: 0
+      WeaponProjectile: {fileID: 0}
+      ProjectileCount: 0
+      DamageAmount: 30
+      ProjectileSpeed: 20
+      ReloadTime: 0
+      Accuracy: 0
+      ExplodingProjectile: 0
+      ExplosionRadius: 0
+      ExplosionAudioID: 0
+      RecoilForce: 0
+      LocalizedName: 
+    - WeaponID: 6
+      AudioID: 0
+      WeaponProjectile: {fileID: 0}
+      ProjectileCount: 0
+      DamageAmount: 40
+      ProjectileSpeed: 0
+      ReloadTime: 0
+      Accuracy: 0
+      ExplodingProjectile: 0
+      ExplosionRadius: 0
+      ExplosionAudioID: 0
+      RecoilForce: 0
+      LocalizedName: 
+    - WeaponID: 7
+      AudioID: 0
+      WeaponProjectile: {fileID: 0}
+      ProjectileCount: 0
+      DamageAmount: 30
+      ProjectileSpeed: 0
+      ReloadTime: 0
+      Accuracy: 0
+      ExplodingProjectile: 0
+      ExplosionRadius: 0
+      ExplosionAudioID: 0
+      RecoilForce: 0
+      LocalizedName: 
+    Bonuses:
+    - BonusID: 0
+      BonusPrefab: {fileID: 198120, guid: 46313a4deba14c64d945f62cd9e21091, type: 2}
+      AudioID: 7
+      HealthBonus: 100
+      ArmorBonus: 0
+      WeaponUnlockID: 0
+    - BonusID: 1
+      BonusPrefab: {fileID: 153142, guid: b89e00566b0f3bf4c87f0f4d9cfd78f4, type: 2}
+      AudioID: 8
+      HealthBonus: 0
+      ArmorBonus: 0.15
+      WeaponUnlockID: 0
+    MaxCountPerEnemyType: 3
+    MaxCountPerBonusType: 4

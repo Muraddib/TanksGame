@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8282bdb82e9d68e4580316b204d8deee, type: 3}
+  m_Name: AudioBank
+  m_EditorClassIdentifier: 
+  Audios:
+  - ID: 0
+    Clip: {fileID: 8300000, guid: 98ee43f119dde354a9d69cbe815e5a98, type: 3}
+    volume: 1
+  - ID: 1
+    Clip: {fileID: 8300000, guid: 2fe5269c9cef5924e88955050e1c1318, type: 3}
+    volume: 1
+  - ID: 1
+    Clip: {fileID: 8300000, guid: 4964eaa186d44384392107ef341eec4e, type: 3}
+    volume: 1
+  - ID: 4
+    Clip: {fileID: 8300000, guid: ac427665936887340ad17474d18ba54e, type: 3}
+    volume: 1
+  - ID: 5
+    Clip: {fileID: 8300000, guid: e380ecfe40fb4b2468f4009f5c9c84e6, type: 3}
+    volume: 1
+  - ID: 6
+    Clip: {fileID: 8300000, guid: d780d5f745b6e2c4c8d4f987a65d55f9, type: 3}
+    volume: 1
+  - ID: 2
+    Clip: {fileID: 8300000, guid: 6c1d1eebf0e4a084f8ecb8b3fc3133b3, type: 3}
+    volume: 1
+  - ID: 7
+    Clip: {fileID: 8300000, guid: 1c394dc84c18b9c4682a2bdc807cc358, type: 3}
+    volume: 1
+  - ID: 8
+    Clip: {fileID: 8300000, guid: e65e5e4d4aa7ba748a02d20200780913, type: 3}
+    volume: 1

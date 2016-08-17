@@ -16,10 +16,13 @@ public class PlayerController : MonoBehaviour
     {
         if (isLive)
         {
-            Health = Health - damageAmount * (Armor + 1f);
-            if (Health <= 0)
+            Armor -= 0.01f;
+            Armor = Mathf.Clamp(Armor, 0f, 1f);
+            Health = Health - damageAmount * (1f-Armor);
+            if (Health <= 0f)
             {
-                Health = 0;
+                Health = 0f;
+                Armor = 0f;
                 isLive = false;
                 StartCoroutine(WaitBeforeDeathEvent(0f));
             }

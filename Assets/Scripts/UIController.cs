@@ -27,6 +27,7 @@ public class UIController : Singleton<UIController>
             GameObject newForm = Instantiate(uiForm.FormPrefab) as GameObject;
             newForm.GetComponent<RectTransform>().SetParent(UIRoot);
             newForm.GetComponent<RectTransform>().anchoredPosition3D = Vector3.zero;
+
             var form = newForm.GetComponent<UIForm>();
             switch (form.FormID)
             {
@@ -38,7 +39,6 @@ public class UIController : Singleton<UIController>
                     break;
             }
         }
-
         GameObject playerUI = Instantiate(uiforms.UIPrefab) as GameObject;
         playerUI.GetComponent<RectTransform>().SetParent(UIRoot);
         playerUI.GetComponent<RectTransform>().anchoredPosition3D = Vector3.zero;
@@ -96,6 +96,7 @@ public class UIController : Singleton<UIController>
                 UpdateUIWeapon();
                 break;
             case EventManager.GameEvents.PlayerHit:
+                UpdateUIArmor();
                 UpdateUIHealth();
                 break;
         }
